@@ -1,17 +1,46 @@
 :
-- ls -l
-- mkdir
-- cd
-- git init
-- git add
-- git commit -m
-- git remote add 
-- git remote -v
-- git push
-- git branch
-- git branch -a
-- git checkout
-- git checkout -b
-- git log
-- nano
+- mkdir homework создаем локальную директорию
+- cd homework заходим в созданную директорию
+- git init инициируем ее для git
+- nano File1.txt создаем текстовый файл в директории
+- git remote add origin 'link' связываем локальную директорию с удаленным репозиторием
+- git remote -v проеверям правильно ли мы связали локальную директорию
+- git status смотрим какие файлы не готовы к отправке 
+- git add .  индексируем файлы
+- git commit -m коммитим файл
+- git status проверяем состояние проекта 
+- git push -u origin отправляем файл в удаленный репозиторий 
+- git checkout -b develop создаем новую ветку и сразу же переключаемся на нее
+- git checkout -b develop1 создаем еще одну новую ветку и переключаемся на нее 
+- ls -l проверяем файлы в директории
+- nano File1.txt заходим в текстовый редактор и добавляем первую строку
+- git status смотрим что надо закоммитить 
+- git add . индексируем изменённые файлы
+- git commit -m делаем коммит изменнёго файла
+- git push -u origin develop1 отправляем изменнёный файл в удаленный репозиторий
+- cd .. выходим из локальной директории
+- 
+- mkdir homework2 создаем новую локальную репозитрию
+- cd homework2 заходим в директорию
+- git clone 'link' клонируем удаленный репозитрий
+- ls -l смотрим какие файлы есть
+- cd homework заходим в директрию
+- git branch -a проверяем какие ветки существуют и на какой мы находимся
+- git checkot -b develop2 создаем новую ветку и переключаемся на нее
+- nano File.txt добваляем новую строку
+- git status смотрим состояние проекта
+- git add . идексируем изменённый файл
+- git commit -m коммитим изменённый файл
+- git status смотрим все ли готово к push
+- git push -u origin develop2 отправляем изменения на удаленный репозиторий
+- git checkout develop переключаемся на другую ветку
+- git merge develop1 сливаем ветки develop <- develop1
+- git push -u origin develop отправляем изменения на удаленный репозиторий
+- git merge develop2 сливаем ветки develop <- develop2
+- nano File.txt разрешаем конфликты если они есть
+- git status смотрим состояние проекта
+- git add . индексируем измененные файлы
+- git commit -m коммитим измённый файл
+- git status смотрим состояние проекта 
+- git push -u origin develop отправляем все изменения на удаленнный репозиторий
 
