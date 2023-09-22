@@ -5,19 +5,14 @@
 import random
 
 
-def nums_generator(n, start, end):
-    while n > 0:
+def generate_random(num: int, start: int, end: int):
+    while num > 0:
         yield random.randint(start, end)
-        n -= 1
+        num -= 1
 
-g = nums_generator(5, 10, 20)
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
+
+gen = generate_random(5, 5, 10)
+print(next(gen))
+
+
+

@@ -5,20 +5,29 @@
 """
 
 
-class MyIterator:
+class SquareIterator:
     def __init__(self):
-        self.num = 0
+        self.count = 0
 
     def __next__(self):
-        result = self.num ** 2
-        if self.num > 10:
-            raise StopIteration("No more")
-        self.num += 1
-        return result
+        res = self.count ** 2
+        if self.count > 5:
+            raise StopIteration
+        self.count += 1
+        return res
 
-class MyIterable:
+
+class SquareIterable:
     def __iter__(self):
-        return MyIterator()
+        return SquareIterator()
 
-l = MyIterable()
-print()
+
+sqr_iter = iter(SquareIterable())
+
+print(next(sqr_iter))
+print(next(sqr_iter))
+print(next(sqr_iter))
+print(next(sqr_iter))
+print(next(sqr_iter))
+print(next(sqr_iter))
+print(next(sqr_iter))
